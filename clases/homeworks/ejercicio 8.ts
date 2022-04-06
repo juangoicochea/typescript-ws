@@ -5,3 +5,7 @@ function pluck(arreglo, prop) {
         return object[prop]
     }) 
 }
+
+function pluck<T, K extends keyof T>(objs: T[], key: K): T[K][] {
+    return objs.map(obj => obj[key]);
+  }

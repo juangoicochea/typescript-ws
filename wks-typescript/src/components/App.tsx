@@ -1,5 +1,3 @@
-import React from 'react';
-import { useEffect } from 'react';
 import {connect} from 'react-redux';
 import {User, fetchUsers, deleteUser} from '../actions';
 import {StoreState} from '../reducers';
